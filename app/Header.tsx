@@ -25,7 +25,7 @@ export function Header() {
     return (
         <div className="flex justify-between m-4 ">
             <div className="text-xl font-bold sm:text-2xl xl:text-3xl">
-                EngHub
+                10xEng
             </div>
             <div className="flex items-center cursor-pointer">
                 <Link legacyBehavior href="/books" onClick={() => router.push('/books')}>
