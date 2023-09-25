@@ -1,42 +1,36 @@
 "use client"
-import { useRouter } from "next/navigation"
-import Link from "next/link"
-import * as React from "react"
-import { Moon, Sun } from "lucide-react"
-import { useTheme } from "next-themes"
-
-
-import { Button } from "@/components/ui/button"
+import { useRouter } from "next/navigation";
+import Link from "next/link";
+import * as React from "react";
+import { Moon, Sun } from "lucide-react";
+import { useTheme } from "next-themes";
+import { Button } from "@/components/ui/button";
 import {
     DropdownMenu,
     DropdownMenuContent,
     DropdownMenuItem,
     DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
-
-
-
+} from "@/components/ui/dropdown-menu";
 
 export function Header() {
-    const { setTheme } = useTheme()
-    const router = useRouter()
-
-
+    const { setTheme, theme } = useTheme(); // Get the current theme
+    const router = useRouter();
+    const linkStyles =
+        theme === 'dark'
+            ? 'text-gray-500 hover:text-white mx-2'
+            : 'text-black hover:text-violet-500 mx-2';
     return (
-        <div className="flex justify-between m-4 ">
-            <div className="text-xl font-bold sm:text-2xl xl:text-3xl">
-                10xEng
-            </div>
+        <div className="flex justify-between m-4">
+            <div className="text-xl font-bold sm:text-2xl xl:text-3xl">EngHub</div>
             <div className="flex items-center cursor-pointer">
                 <Link legacyBehavior href="/books" onClick={() => router.push('/books')}>
-                    <a className="text-gray-500 hover:text-white mx-2">Books</a>
+                    <a className={`${linkStyles} mx-2`}>Books</a>
                 </Link>
-
                 <Link legacyBehavior href="https://mayankonweb.hashnode.dev/">
-                    <a className="text-gray-500 hover:text-white mx-2" target="blank">Blogs</a>
+                    <a className={`${linkStyles} mx-2`} target="blank">Blogs</a>
                 </Link>
                 <Link href="/courses" legacyBehavior onClick={() => router.push('/courses')}>
-                    <a className="text-gray-500 hover:text-white mx-2">Courses</a>
+                    <a className={`${linkStyles}  mx-2`}>Courses</a>
                 </Link>
                 <DropdownMenu>
                     <DropdownMenuTrigger asChild>
@@ -50,17 +44,13 @@ export function Header() {
                         <DropdownMenuItem onClick={() => setTheme("light")}>
                             Light
                         </DropdownMenuItem>
-                        <DropdownMenuItem onClick={() => setTheme("dark")}>
-                            Dark
-                        </DropdownMenuItem>
+                        <DropdownMenuItem onClick={() => setTheme("dark")}>Dark</DropdownMenuItem>
                         <DropdownMenuItem onClick={() => setTheme("system")}>
                             System
                         </DropdownMenuItem>
                     </DropdownMenuContent>
                 </DropdownMenu>
-
             </div>
-
-        </div >
-    )
+        </div>
+    );
 }
