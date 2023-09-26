@@ -15,7 +15,7 @@ export default function () {
               <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-8xl mb-5">
                 Level up your
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-yellow-400">
-                  engineering
+                  &nbsp;engineering&nbsp;
                 </span>
                 skills
               </h1>

@@ -1,8 +1,7 @@
 import CLientHero from '@/components/ClientHero'
 import { Header } from './Header'
-import { Button } from '@/components/ui/button'
-import Image from 'next/image'
 import AboutUs from './AboutUs'
+import Faq from './Faq'
 
 export default function Home() {
   return (
@@ -10,6 +9,7 @@ export default function Home() {
       <Header />
       <CLientHero />
       <AboutUs />
+      <Faq />
     </div>
   )
 }

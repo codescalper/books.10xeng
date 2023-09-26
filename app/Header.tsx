@@ -20,10 +20,10 @@ export function Header() {
             ? 'text-gray-500 hover:text-white mx-2'
             : 'text-black hover:text-violet-500 mx-2';
     return (
-        <div className="flex justify-between m-4 sticky top-0 bg-neutral-950 " >
+        <div className="flex justify-between m-4 sticky top-0" >
             <div className="text-xl font-bold sm:text-2xl xl:text-3xl">EngHub</div>
             <div className="flex items-center cursor-pointer">
-                <Link legacyBehavior href="/books" onClick={() => router.push('/books')}>
+                <Link legacyBehavior href="/books" onClick={() => router.push('/books/sem1')}>
                     <a className={`${linkStyles} mx-2`}>Books</a>
                 </Link>
                 <Link legacyBehavior href="https://mayankonweb.hashnode.dev/">
