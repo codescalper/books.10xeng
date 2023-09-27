@@ -12,15 +12,15 @@ export default function () {
 
             <div className="space-y-2">
 
-              <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-8xl mb-5">
+              <h1 className="selection:bg-pink-400 text-3xl font-bold tracking-tighter sm:text-5xl xl:text-8xl mb-5">
                 Level up your
-                <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-yellow-400">
+                <span className="selection:text-white bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-yellow-400">
                   &nbsp;engineering&nbsp;
                 </span>
                 skills
               </h1>
 
-              <p className="max-w-[600px] md:text-2xl mx-auto ">
+              <p className="selection:bg-lime-400 selection:text-black max-w-[600px] md:text-2xl mx-auto ">
                 Learn from experts and ace your exams with our tips, tricks and study resources.
               </p>
 
