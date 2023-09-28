@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 
-export default function () {
+export default function ClientHero () {
 
   return (
     <section className="flex items-center justify-center w-full h-screen py-12 md:py-24 lg:py-32 xl:py-48">
