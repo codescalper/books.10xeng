@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 export default function () {
 
   return (
-    <section className=" w-full h-screen py-12 md:py-24 lg:py-32 xl:py-48">
+    <section className="flex items-center justify-center w-full h-screen py-12 md:py-24 lg:py-32 xl:py-48">
       <div className="container px-4 md:px-6">
 
         <div className="grid gap-6 items-center">
