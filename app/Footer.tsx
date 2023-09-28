@@ -5,7 +5,7 @@ export default function Footer() {
     const links = [
         {
             title: "About Us",
-            href: "#",
+            href: "#about-us",
         },
         {
             title: "Books",
