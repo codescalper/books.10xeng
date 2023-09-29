@@ -13,14 +13,19 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 export function Header() {
-    const { setTheme, theme } = useTheme();
+    const { setTheme, theme, resolvedTheme } = useTheme();
     const router = useRouter();
+
+    // Determine the theme to use based on the user's system preference
+    const selectedTheme = resolvedTheme || theme;
+
     const linkStyles =
-        theme === 'dark'
+        selectedTheme === 'dark'
             ? 'text-gray-500 hover:text-white mx-2'
             : 'text-black hover:text-violet-500 mx-2';
+
     return (
-        <div className="flex justify-between m-4 sticky top-0" >
+        <div className="flex justify-between m-4 sticky top-0">
             <div className="text-xl font-bold sm:text-2xl xl:text-3xl">EngHub</div>
             <div className="flex items-center cursor-pointer">
                 <Link legacyBehavior href="/books" onClick={() => router.push('/books/sem1')}>
