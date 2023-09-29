@@ -28,55 +28,55 @@ export default function Sem3(){
             <Card className="w-[350px]">
               <CardContent></CardContent>
               <CardFooter className="flex justify-center">
-                <Link legacyBehavior href="">
+                <a href="" target="_blank" rel="noopener noreferrer">
                   <Button size={"lg"}>
                     Engineering Mathematics (EM-3)
                   </Button>
-                </Link>
+                </a>
               </CardFooter>
             </Card>
 
             <Card className="w-[350px]">
               <CardContent></CardContent>
               <CardFooter className="flex justify-center">
-                <Link legacyBehavior href="">
+              <a href="" target="_blank" rel="noopener noreferrer">
                   <Button size={"lg"}>
                     Discrete Structures and Graph Theory (DSGT)
                   </Button>
-                </Link>
+                </a>
               </CardFooter>
             </Card>
 
             <Card className="w-[350px]">
               <CardContent></CardContent>
               <CardFooter className="flex justify-center">
-                <Link legacyBehavior href="">
+              <a href="" target="_blank" rel="noopener noreferrer">                  
                   <Button size={"lg"}>
                     Data Structures (DS)
                   </Button>
-                </Link>
+                </a>
               </CardFooter>
             </Card>
 
             <Card className="w-[350px]">
               <CardContent></CardContent>
               <CardFooter className="flex justify-center">
-                <Link legacyBehavior href="">
+              <a href="" target="_blank" rel="noopener noreferrer"> 
                   <Button size={"lg"}>
                     Digital Logic & Computer Architecture
                   </Button>
-                </Link>
+                </a>
               </CardFooter>
             </Card>
 
             <Card className="w-[350px]">
               <CardContent></CardContent>
               <CardFooter className="flex justify-center">
-                <Link legacyBehavior href="">
+              <a href="" target="_blank" rel="noopener noreferrer">
                   <Button size={"lg"}>
                     Computer Graphics
                   </Button>
-                </Link>
+                </a>
               </CardFooter>
             </Card>
 

@@ -26,11 +26,11 @@ export default function Sem2(){
             <Card className="w-[350px]">
             <CardContent></CardContent>
               <CardFooter className="flex justify-center">
-                <Link legacyBehavior href="">
+              <a href="https://drive.google.com/drive/folders/18msafgxzeMUVpIHDRqZICj1FtkC7Jfsn?usp=sharing" target="_blank" rel="noopener noreferrer">
                   <Button size={"lg"}>
                     C Programming
                   </Button>
-                </Link>
+                  </a>
               </CardFooter>
             </Card>
 
@@ -38,55 +38,55 @@ export default function Sem2(){
             <Card className="w-[350px]">
             <CardContent></CardContent>
               <CardFooter className="flex justify-center">
-                <Link legacyBehavior href="">
+              <a href="https://drive.google.com/file/d/1YoRKgbNPYJOL2X5zphCHOJ8J9D1Vg_bU/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                   <Button size={"lg"}>
                     Engineering Physics (EP-2)
                   </Button>
-                </Link>
+                </a>
               </CardFooter>
             </Card>
 
             <Card className="w-[350px]">
             <CardContent></CardContent>
               <CardFooter className="flex justify-center">
-                <Link legacyBehavior href="">
+              <a href="https://drive.google.com/file/d/1-l6vIEQPobX5fegv5WKiuzgP09_o4MBf/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                   <Button size={"lg"}>
                     Engineering Chemistry (EC-2)
                   </Button>
-                </Link>
+                </a>
               </CardFooter>
             </Card>
 
             <Card className="w-[350px]">
             <CardContent></CardContent>
               <CardFooter className="flex justify-center">
-                <Link legacyBehavior href="">
+              <a href="https://drive.google.com/file/d/1_uu7mMdM5fU-QxyQWI0z3Mvh9UnpfUUX/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                   <Button size={"lg"}>
                     Engineering Graphics (EG)
                   </Button>
-                </Link>
+                </a>
               </CardFooter>
             </Card>
 
             <Card className="w-[350px]">
             <CardContent></CardContent>
               <CardFooter className="flex justify-center">
-                <Link legacyBehavior href="">
+              <a href="https://drive.google.com/file/d/1v6MKDUtkmAxmLeJZhnf65Apuau_f2Ni8/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                   <Button size={"lg"}>
                     Engineering Mathematics (EM-2)
                   </Button>
-                </Link>
+               </a>
               </CardFooter>
             </Card>
 
             <Card className="w-[350px]">
             <CardContent></CardContent>
               <CardFooter className="flex justify-center">
-                <Link legacyBehavior href="">
+              <a href="https://drive.google.com/file/d/1224x6Bn4TDCN1JXvVKZXc8hBiEdMO4zk/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                   <Button size={"lg"}>
                     Professional Communication and Ethics (PCE)
                   </Button> 
-                </Link>
+                </a>
               </CardFooter>
             </Card>
 

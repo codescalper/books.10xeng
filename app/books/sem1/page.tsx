@@ -27,55 +27,55 @@ export default function Sem1(){
               <Card className="w-[350px]">               
                 <CardContent></CardContent>
                 <CardFooter className="flex justify-center">
-                  <Link legacyBehavior href="">
+                  <a  href="https://drive.google.com/drive/folders/1Ogo7FHJzWdIqYTXtb6mYXvpZkq_aatwH?usp=sharing" target="_blank" rel="noopener noreferrer">
                     <Button size={"lg"}>
                       Basic Electrical Engineering (BEE)
                     </Button>
-                  </Link>
+                  </a>
                 </CardFooter>
               </Card>
               
               <Card className="w-[350px] ">
                 <CardContent></CardContent>
                 <CardFooter className="flex justify-center">
-                  <Link legacyBehavior href="">
+                  <a  href="https://drive.google.com/drive/folders/1aqJ0ZCG-zHocfu-Ubkqbkpi0lAjt5Vfu?usp=sharing" target="_blank" rel="noopener noreferrer">
                     <Button size={"lg"}>
                       Engineering Chemistry (EC-1)
                     </Button>
-                  </Link>
+                  </a>
                 </CardFooter>
               </Card>
               
               <Card className="w-[350px] ">
                 <CardContent></CardContent>
                 <CardFooter className="flex justify-center">
-                  <Link legacyBehavior href="">
+                  <a href="https://drive.google.com/file/d/1EgUNxI37c7DYyAI8WV62yq-TDZdXZYDy/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                     <Button size={"lg"}>
                       Engineering Mathematics (EM-1)
                     </Button>
-                  </Link>
+                  </a>
                 </CardFooter>
               </Card>
               
               <Card className="w-[350px] ">
                 <CardContent></CardContent>
                 <CardFooter className="flex justify-center">
-                  <Link legacyBehavior href="">
+                  <a href="https://drive.google.com/file/d/1pB8iOiACiK8STwcf95ytiG3cL19kwQ8-/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                     <Button size={"lg"}>
                       Engineering Mechanics
                     </Button>
-                  </Link>
+                  </a>
                 </CardFooter>
               </Card>
               
               <Card className="w-[350px] ">
                 <CardContent></CardContent>
                 <CardFooter className="flex justify-center">
-                  <Link legacyBehavior href="">
+                  <a  href="https://drive.google.com/file/d/10moVO_zCNEK1Pv1JDVECecP-EpHXMrGF/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                     <Button size={"lg"}>
                       Engineering Physics (EP-1)
                     </Button>
-                  </Link>
+                  </a>
                 </CardFooter>
               </Card>
 
