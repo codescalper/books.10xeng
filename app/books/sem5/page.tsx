@@ -28,66 +28,66 @@
                 <Card className="w-[350px]">
                 <CardContent></CardContent>
                 <CardFooter className="flex justify-center">
-                    <Link legacyBehavior href="https://drive.google.com/file/d/1PLGOhNFt7onB6Fl1F9coaP4LUvRia94k/view?usp=sharing">
+                    <a href="https://drive.google.com/file/d/1PLGOhNFt7onB6Fl1F9coaP4LUvRia94k/view?usp=sharing">
                     <Button size={"lg"}>
                         Theoretical Computer Science (TCS)
                     </Button>
-                    </Link>
+                    </a>
                 </CardFooter>
                 </Card>
 
                 <Card className="w-[350px]">
                 <CardContent></CardContent>
                 <CardFooter className="flex justify-center">
-                    <Link legacyBehavior href="https://drive.google.com/drive/folders/1lKhwXy7WVjox_NZtEfyxrPig25VCvvoe?usp=drive_link">
+                    <a href="https://drive.google.com/drive/folders/1lKhwXy7WVjox_NZtEfyxrPig25VCvvoe?usp=sharing">
                     <Button size={"lg"}>
                         Software Engineering (SE)
                     </Button>
-                    </Link>
+                    </a>
                 </CardFooter>
                 </Card>
 
                 <Card className="w-[350px]">
                 <CardContent></CardContent>
                 <CardFooter className="flex justify-center">
-                    <Link legacyBehavior href="https://drive.google.com/file/d/1MG3QysmzKBWvarkW5dRg7FaBQEkpILIJ/view?usp=sharing">
+                    <a href="https://drive.google.com/file/d/1MG3QysmzKBWvarkW5dRg7FaBQEkpILIJ/view?usp=sharing">
                     <Button size={"lg"}>
                         Computer Networks (CN)
                     </Button>
-                    </Link>
+                    </a>
                 </CardFooter>
                 </Card>
 
                 <Card className="w-[350px]">
                 <CardContent></CardContent>
                 <CardFooter className="flex justify-center">
-                    <Link legacyBehavior href="https://drive.google.com/drive/folders/198il1hTudXtdV5UF9Xw4jnAWd92uTF9u?usp=drive_link" >
+                    <a href="https://drive.google.com/drive/folders/198il1hTudXtdV5UF9Xw4jnAWd92uTF9u?usp=drive_link" >
                     <Button size={"lg"}>
                         Data Warehousing & Mining (DWM)
                     </Button>
-                    </Link>
+                    </a>
                 </CardFooter>
                 </Card>
 
                 <Card className="w-[350px]">
                 <CardContent></CardContent>
                 <CardFooter className="flex justify-center">
-                    <Link legacyBehavior href="https://drive.google.com/file/d/1yhM8XdAqdQVcmPZ15ohth65Y_pMi0_ry/view?usp=sharing">
+                    <a href="https://drive.google.com/file/d/1yhM8XdAqdQVcmPZ15ohth65Y_pMi0_ry/view?usp=sharing">
                     <Button size={"lg"}>
                         Internet Programming (IP)
                     </Button>
-                    </Link>
+                    </a>
                 </CardFooter>
                 </Card>
 
                 <Card className="w-[350px]">
                 <CardContent></CardContent>
                 <CardFooter className="flex justify-center">
-                    <Link legacyBehavior href="">
+                    <a href="">
                     <Button size={"lg"}>
                         Advance Database Management System (ADBMS)
                     </Button>
-                    </Link>
+                    </a>
                 </CardFooter>
                 </Card>
             </div>

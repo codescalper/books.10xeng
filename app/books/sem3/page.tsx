@@ -28,7 +28,7 @@ export default function Sem3(){
             <Card className="w-[350px]">
               <CardContent></CardContent>
               <CardFooter className="flex justify-center">
-                <a href="" target="_blank" rel="noopener noreferrer">
+                <a href="https://drive.google.com/drive/folders/15Xp9fyur9Alqiq-FrmuclJB9Nmp4Xn8U?usp=sharing" target="_blank" rel="noopener noreferrer">
                   <Button size={"lg"}>
                     Engineering Mathematics (EM-3)
                   </Button>
@@ -50,7 +50,7 @@ export default function Sem3(){
             <Card className="w-[350px]">
               <CardContent></CardContent>
               <CardFooter className="flex justify-center">
-              <a href="" target="_blank" rel="noopener noreferrer">                  
+              <a href="https://drive.google.com/file/d/1faDrFa8BTY0c9snaudYrttjXmM5yDDYn/view?usp=sharing" target="_blank" rel="noopener noreferrer">                  
                   <Button size={"lg"}>
                     Data Structures (DS)
                   </Button>
@@ -72,9 +72,20 @@ export default function Sem3(){
             <Card className="w-[350px]">
               <CardContent></CardContent>
               <CardFooter className="flex justify-center">
-              <a href="" target="_blank" rel="noopener noreferrer">
+              <a href="https://drive.google.com/drive/folders/15Xp9fyur9Alqiq-FrmuclJB9Nmp4Xn8U?usp=sharing" target="_blank" rel="noopener noreferrer">
                   <Button size={"lg"}>
                     Computer Graphics
+                  </Button>
+                </a>
+              </CardFooter>
+            </Card>
+
+            <Card className="w-[350px]">
+              <CardContent></CardContent>
+              <CardFooter className="flex justify-center">
+              <a href="https://drive.google.com/drive/folders/17mxcsCJqoHWJHbqT2v9k9sL1uwCd2-VN?usp=sharing" target="_blank" rel="noopener noreferrer">
+                  <Button size={"lg"}>
+                   Java OOPS
                   </Button>
                 </a>
               </CardFooter>

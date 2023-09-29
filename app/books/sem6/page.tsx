@@ -28,66 +28,66 @@ export default function Sem6() {
             <Card className="w-[350px]">
               <CardContent></CardContent>
               <CardFooter className="flex justify-center">
-                <Link legacyBehavior href="">
+                <a href="https://drive.google.com/drive/folders/12fMQ6wjJCXvvr-yVou3b2MZsK70_GdLF?usp=sharing" target="_blank" rel="noopener noreferrer">
                   <Button size={"lg"}>
                     System Programming & Compiler Construction (SPCC)
                   </Button>
-                </Link>
+                </a>
               </CardFooter>
             </Card>
 
             <Card className="w-[350px]">
               <CardContent></CardContent>
               <CardFooter className="flex justify-center">
-                <Link legacyBehavior href="">
+                <a href="https://drive.google.com/file/d/1TXh2DZl6lmWoqDYXoh7OHqUtDrYBkcxj/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                   <Button size={"lg"}>
                     Cryptography & System Security (CSS)
                   </Button>
-                </Link>
+                </a>
               </CardFooter>
             </Card>
 
             <Card className="w-[350px]">
               <CardContent></CardContent>
               <CardFooter className="flex justify-center">
-                <Link legacyBehavior href="">
+                <a href="" target="_blank" rel="noopener noreferrer">
                   <Button size={"lg"}>
                     Mobile Computing (MC)
                   </Button>
-                </Link>
+                </a>
               </CardFooter>
             </Card>
 
             <Card className="w-[350px]">
               <CardContent></CardContent>
               <CardFooter className="flex justify-center">
-                <Link legacyBehavior href="">
+                <a href="" target="_blank" rel="noopener noreferrer">
                   <Button size={"lg"}>
                     Artificial Intelligence (AI)
                   </Button>
-                </Link>
+                </a>
               </CardFooter>
             </Card>
 
             <Card className="w-[350px]">
               <CardContent></CardContent>
               <CardFooter className="flex justify-center">
-                <Link legacyBehavior href="">
+                <a href="" target="_blank" rel="noopener noreferrer">
                   <Button size={"lg"}>
                    Internet of Things (IOT)
                   </Button>
-                </Link>
+                </a>
               </CardFooter>
             </Card>
 
             <Card className="w-[350px]">
               <CardContent></CardContent>
               <CardFooter className="flex justify-center">
-                <Link legacyBehavior href="">
+                <a href="" target="_blank" rel="noopener noreferrer">
                   <Button size={"lg"}>
                     Quantitative Analysis (QA)
                   </Button>
-                </Link>
+                </a>
               </CardFooter>
             </Card>
 

@@ -10,7 +10,7 @@ const page = (props: Props) => {
         <>
             <Header />
             <div>
-                Sem8
+                Will be uploaded soon ...
             </div >
         </>
     )

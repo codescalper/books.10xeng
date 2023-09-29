@@ -12,6 +12,7 @@ import {
     CardTitle,
 } from "@/components/ui/card";
 import { Header } from "../Header";
+import Footer from "../Footer";
 
 export default function Books() {
     const router = useRouter();
@@ -92,6 +93,9 @@ export default function Books() {
                         </CardFooter>
                     </Card>
                 </div>
+                <footer className="xl:absolute bottom-0 left-0 right-0">
+          <Footer />
+        </footer>
             </div>
         </>
     );
