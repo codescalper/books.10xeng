@@ -6,7 +6,7 @@ import { ReactNode } from 'react';
 export function ThemeProvider({ children }: { children: ReactNode }) {
     return (
         <NextThemesProvider
-            defaultTheme='dark' // Set default theme
+            defaultTheme='dark' // Set default theme 
             attribute='class'
         >
             {children}

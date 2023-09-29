@@ -37,14 +37,14 @@ export function Header() {
             </Link>
             <div className="flex items-center cursor-pointer">
                 <Link legacyBehavior href="/books" onClick={() => router.push('/books/sem1')}>
-                    <a className={`${linkStyles} mx-2`}>Books</a>
+                    <a className={`${linkStyles} mx-2 focus:outline-none`}>Books</a>
                 </Link>
 
                 <Link legacyBehavior href="https://mayankonweb.hashnode.dev/">
-                    <a className={`${linkStyles} mx-2`} target="blank">Blogs</a>
+                    <a className={`${linkStyles} mx-2 focus:outline-none`} target="blank">Blogs</a>
                 </Link>
                 <Link href="/courses" legacyBehavior onClick={() => router.push('/courses')}>
-                    <a className={`${linkStyles}  mx-2`}>Courses</a>
+                    <a className={`${linkStyles}  mx-2 focus:outline-none`}>Courses</a>
                 </Link>
                 <DropdownMenu>
                     <DropdownMenuTrigger asChild>
