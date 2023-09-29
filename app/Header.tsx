@@ -27,7 +27,7 @@ export function Header() {
     const headerStyles =
         selectedTheme === 'dark'
         ? 'bg-slate-950 backdrop-blur-md bg-opacity-50 sm:pb-3 md:pb-4 xl:pb-5'
-        : 'bg-white backdrop-blur-md bg-opacity-50 sm:pb-3 md:pb-4 xl:pb-5';
+        : 'backdrop-blur-md bg-opacity-50 sm:pb-3 md:pb-4 xl:pb-5';
 
     return (
         <div className={`flex justify-between m-4 sticky top-0 ${headerStyles}`}>
