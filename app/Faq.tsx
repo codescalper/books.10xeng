@@ -8,8 +8,8 @@ import {
 
 export default function Faq() {
     return (
-        <div className="px-4 md:px-8 lg:px-12 py-8 mt-64 mb-32">
-            <h1 className="text-3xl md:text-4xl xl:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-t from-cyan-500 to-purple-400 selection:bg-pink-400 selection:text-white">
+        <div className="px-4 md:px-8 lg:px-12 py-8 mt-16 sm:mt-32 xl:mt-64 mb-32">
+            <h1 className="text-4xl md:text-5xl xl:text-8xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-t from-cyan-500 to-purple-400 selection:bg-pink-400 selection:text-white">
                 FAQs
             </h1>
             <Accordion type="single" collapsible className="w-full">

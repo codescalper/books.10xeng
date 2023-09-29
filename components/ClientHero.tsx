@@ -12,9 +12,9 @@ export default function ClientHero () {
 
             <div className="space-y-2">
 
-              <h1 className="selection:bg-pink-400 text-3xl font-bold tracking-tighter sm:text-5xl xl:text-8xl mb-5">
+              <h1 className="selection:bg-pink-400 text-4xl font-bold tracking-tighter sm:text-5xl xl:text-8xl mb-5">
                 Level up your
-                <span className="selection:text-white bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-yellow-400">
+                <span className="selection:text-white bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-yellow-400 ">
                   &nbsp;engineering&nbsp;
                 </span>
                 skills
