@@ -21,21 +21,26 @@
         const selectedTheme = resolvedTheme || theme;
 
         return (
-            <div className={`flex justify-between m-4 sticky top-0 ${selectedTheme}-theme`}>
-            
-            <Link legacyBehavior href="/" onClick={() => router.push('/')}>
+            <div
+            className={`flex justify-between m-4 sticky top-0 ${
+              selectedTheme === "light"
+                ? "bg-white backdrop-blur-md bg-opacity-50 sm:pb-3 md:pb-4 xl:pb-5"
+                : "bg-slate-950 backdrop-blur-md bg-opacity-50 sm:pb-3 md:pb-4 xl:pb-5"
+            }`}
+          >            
+                <Link legacyBehavior href="/" onClick={() => router.push('/')}>
                 <div className="text-xl font-bold sm:text-2xl xl:text-3xl cursor-pointer">EngHub</div>
             </Link>
-            <div className="flex items-center cursor-pointer webkit-tap-highlight-color-transparent! ">
+            <div className="flex items-center cursor-pointer  ">
                 <Link legacyBehavior href="/books" onClick={() => router.push('/books/sem1')}>
-                    <a className="mx-2 webkit-tap-highlight-color-transparent!">Books</a>
+                <a className={`mx-2 ${selectedTheme === 'light' ? 'text-link-light hover:text-black' : 'text-link-dark hover:text-white'}`}>Books</a>
                 </Link>
 
                 <Link legacyBehavior href="https://mayankonweb.hashnode.dev/">
-                    <a className="mx-2 webkit-tap-highlight-color-transparent!" target="blank">Blogs</a>
+                <a className={`mx-2 ${selectedTheme === 'light' ? 'text-link-light hover:text-black' : 'text-link-dark hover:text-white'}`} target="blank">Blogs</a>
                 </Link>
                 <Link href="/courses" legacyBehavior onClick={() => router.push('/courses')}>
-                    <a className="mx-2 webkit-tap-highlight-color-transparent!">Courses</a>
+                <a className={`mx-2 ${selectedTheme === 'light' ? 'text-link-light hover:text-black' : 'text-link-dark hover:text-white'}`}>Courses</a>
                 </Link>
                     <DropdownMenu>
                         <DropdownMenuTrigger asChild>
