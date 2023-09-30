@@ -17,15 +17,10 @@ export default function Sem7() {
 
   return (
     <>
-      <Header />
-   
-      <div className="flex flex-col items-center h-screen pt-16">
-
-        <div className="flex-grow">
-
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-20 lg:gap-40 mx-auto">
-
-            <Card className="w-[350px]">
+<div className="flex flex-col min-h-screen">
+            <Header />
+            <div className="flex flex-grow flex-col items-center pt-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-20 lg:gap-40 mx-auto pb-16">            <Card className="w-[350px]">
               <CardContent></CardContent>
               <CardFooter className="flex justify-center">
                 <a href="https://drive.google.com/file/d/1M32pp432UKrEtjRnEAS3meya8FMy9fRR/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
@@ -106,9 +101,8 @@ export default function Sem7() {
 
             </div>
 
-            <footer className="fixed bottom-0 left-0 right-0">
             <Footer />
-            </footer>
+
 
             </div>
         

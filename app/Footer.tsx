@@ -24,25 +24,11 @@
                 href: "#",
             },
         ];
-        const glowAnimation = `
-            @keyframes glow {
-                from {
-                background-position: 0 0;
-                }
-                to {
-                background-position: 200% 0; 
-                }
-            }
 
-            .animate-glow {
-                animation: glow 1s alternate infinite;
-            }
-            `
 
         return (
         <>
-        <style>{glowAnimation}</style>
-            <footer className="relative py-12 border-t-2 border-indigo-600">
+            <footer className="relative py-12 border-t-2 border-indigo-600 w-full">
 
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 animate-pulse"></div>
                 <div className="max-w-7xl mx-auto ">

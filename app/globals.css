@@ -54,6 +54,16 @@
   * {
     @apply border-border;
   }
+/* tailwind.css */
+@layer components {
+  .dark-theme {
+    @apply text-gray-500 hover:text-white bg-slate-950 backdrop-blur-md bg-opacity-50 sm:pb-3 md:pb-4 xl:pb-5;
+  }
+
+  .light-theme {
+    @apply text-black hover:text-violet-500 backdrop-blur-md bg-opacity-50 sm:pb-3 md:pb-4 xl:pb-5;
+  }
+}
 
   body {
     @apply bg-background text-foreground;

@@ -18,9 +18,10 @@ export default function Books() {
     const router = useRouter();
     return (
         <>
+ <div className="flex flex-col min-h-screen">
             <Header />
-            <div className="flex flex-col items-center ">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-20 lg:gap-40 mx-auto">
+            <div className="flex flex-grow flex-col items-center pt-16">
+                <div className="grid grid-cols-1 md:grid-cols-1 xl:grid-cols-2 gap-20 lg:gap-40 mx-auto pb-16">
                     <Card className="w-[300px] ">
                         <CardHeader>
                             <CardTitle className="flex justify-center">First Year</CardTitle>
@@ -93,10 +94,12 @@ export default function Books() {
                         </CardFooter>
                     </Card>
                 </div>
-                <footer className="xl:absolute bottom-0 left-0 right-0">
+           
           <Footer />
-        </footer>
+      
             </div>
+            </div>
+     
         </>
     );
 }
