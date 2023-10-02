@@ -29,7 +29,7 @@
             }`}
           >            
                 <Link legacyBehavior href="/" onClick={() => router.push('/')}>
-                <div className="text-xl font-bold sm:text-2xl xl:text-3xl cursor-pointer">EngHub</div>
+                <div className="text-xl font-bold sm:text-2xl xl:text-3xl cursor-pointer">10xEng</div>
             </Link>
             <div className="flex items-center cursor-pointer  ">
                 <Link legacyBehavior href="/books" onClick={() => router.push('/books/sem1')}>

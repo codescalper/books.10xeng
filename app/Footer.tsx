@@ -49,7 +49,7 @@
                     </div>
                     <div className="flex justify-between flex-col md:flex-row items-center mt-2">
 
-                        <h2 className="text-2xl font-bold mt-5">EngHub</h2>
+                        <h2 className="text-2xl font-bold mt-5">10xEng</h2>
                         <div className="flex gap-4 mt-5">
                             <a href="https://twitter.com/mayanks_tw" className="text-gray-500 hover:text-blue-400">
                                 <FaTwitter size="1.5em" />
@@ -74,7 +74,7 @@
 
                     <div className="mt-6 pt-6 border-t-1 border-gray-200 text-center">
                         <p className="text-sm text-gray-500">
-                            Copyright © {new Date().getFullYear()} EngHub. All rights reserved.
+                            Copyright © {new Date().getFullYear()} 10xEng. All rights reserved.
                         </p>
                     </div>
 
