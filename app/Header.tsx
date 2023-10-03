@@ -39,8 +39,8 @@
                 <Link legacyBehavior href="https://mayankonweb.hashnode.dev/">
                 <a className={`mx-2 ${selectedTheme === 'light' ? 'text-link-light hover:text-black' : 'text-link-dark hover:text-white'}`} target="blank">Blogs</a>
                 </Link>
-                <Link href="/courses" legacyBehavior onClick={() => router.push('/courses')}>
-                <a className={`mx-2 ${selectedTheme === 'light' ? 'text-link-light hover:text-black' : 'text-link-dark hover:text-white'}`}>Courses</a>
+                <Link href="/" legacyBehavior onClick={() => router.push('/')}>
+                <a className={`mx-2 ${selectedTheme === 'light' ? 'text-link-light hover:text-black' : 'text-link-dark hover:text-white'}`}>Counselling</a>
                 </Link>
                     <DropdownMenu>
                         <DropdownMenuTrigger asChild>
