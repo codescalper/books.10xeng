@@ -26,7 +26,7 @@ export default function Books() {
                         <CardHeader>
                             <CardTitle className="flex justify-center">First Year</CardTitle>
                             <CardDescription className="flex justify-center">
-                                Computer Engineering
+                                All Departments
                             </CardDescription>
                         </CardHeader>
                         <CardContent></CardContent>
