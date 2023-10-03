@@ -12,7 +12,7 @@ function AboutUs({ }: Props) {
             </div>
             <div className="about-us-text p-4 md:p-0">
                 <h2 className="text-4xl  sm:text-5xl xl:text-8xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-lime-500 to-emerald-400 selection:bg-pink-400 selection:text-white">About Us</h2>
-                <ul className="text-lg sm:text-xl xl:text-2xl list-disc list-inside mb-4">
+                <ul className="selection:bg-lime-400 selection:text-black text-lg sm:text-xl xl:text-2xl list-disc list-inside mb-4">
                     <li>10xEng provides free resources like books and blogs to help students excel academically in engineering.</li><br></br>
                     <li>Free training offered beyond academics to nurture better developers and guide career excellence.</li><br></br>
                     <li>Focus on holistic development through events that enhance skills and enable networking.</li><br></br>

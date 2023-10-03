@@ -12,17 +12,17 @@ export default function Faq() {
             <h1 className="text-4xl md:text-5xl xl:text-8xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-t from-cyan-500 to-purple-400 selection:bg-pink-400 selection:text-white">
                 FAQs
             </h1>
-            <Accordion type="single" collapsible className="w-full">
+            <Accordion type="single" collapsible className="w-full selection:bg-lime-400 selection:text-black">
                 <AccordionItem value="item-1">
-                    <AccordionTrigger className="text-base md:text-xl xl:text-2xl">
+                    <AccordionTrigger className="text-base md:text-xl xl:text-2xl selection:bg-lime-400 selection:text-black">
                         In which form books are available?
                     </AccordionTrigger>
-                    <AccordionContent className="text-sm md:text-lg xl:text-xl">
+                    <AccordionContent className="text-sm md:text-lg xl:text-xl selection:bg-lime-400 selection:text-black">
                         Books are available in the form of PDF.
                     </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-2">
-                    <AccordionTrigger className="text-base md:text-xl xl:text-2xl">
+                    <AccordionTrigger className="text-base md:text-xl xl:text-2xl selection:bg-lime-400 selection:text-black">
                         Is there a book for Core Branches like Civil, Mechanical, Electronics?
                     </AccordionTrigger>
                     <AccordionContent className="text-sm md:text-lg xl:text-xl">

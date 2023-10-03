@@ -7,7 +7,7 @@ import { Analytics } from '@vercel/analytics/react';
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: '10xEng',
+  title: '10xEng | Books',
   description: 'Books and materials for Mumbai & Pune University engineering student',
 }
 interface RootLayoutProps {
