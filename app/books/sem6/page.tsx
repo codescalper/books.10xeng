@@ -20,7 +20,7 @@ export default function Sem6() {
       <Header />
 
       <div className="flex flex-col min-h-screen">
-            <Header />
+       
             <div className="flex flex-grow flex-col items-center pt-16">
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-20 lg:gap-40 mx-auto pb-16">            <Card className="w-[350px]">
               <CardContent></CardContent>
