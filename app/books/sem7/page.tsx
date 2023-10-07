@@ -23,7 +23,7 @@ export default function Sem7() {
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-20 lg:gap-40 mx-auto pb-16">            <Card className="w-[350px]">
               <CardContent></CardContent>
               <CardFooter className="flex justify-center">
-                <a href="https://drive.google.com/file/d/1M32pp432UKrEtjRnEAS3meya8FMy9fRR/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+                <a href="https://drive.google.com/file/d/1M32pp432UKrEtjRnEAS3meya8FMy9fRR/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                   <Button size={"lg"}>
                     Machine Learning (ML)
                   </Button>
