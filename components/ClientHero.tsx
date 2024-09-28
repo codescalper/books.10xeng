@@ -9,7 +9,7 @@ import Confetti from "react-dom-confetti";
 
 const GlowingBadge = ({ children }: { children: React.ReactNode }) => (
   <div className="relative inline-block">
-    <div className="absolute inset-0 rounded-full bg-gradient-to-r shadow-xl from-pink-500 via-red-500 to-yellow-500 opacity-75 blur-sm animate-pulse"></div>
+    <div className="absolute inset-0 rounded-full bg-gradient-to-r shadow-xl from-blue-500 via-purple-500 to-indigo-500 opacity-90 blur-md animate-pulse"></div>
     {/* <div className="absolute inset-0 rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 animate-border"></div> */}
     <Badge variant="outline" className="relative z-10 bg-background border-transparent">
       {children}
@@ -55,7 +55,7 @@ export default function ClientHero() {
 
               <h1 className="selection:bg-pink-400 text-4xl font-bold tracking-tighter sm:text-5xl xl:text-8xl mb-5">
                 Level up your
-                <span className="block mt-1 bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-yellow-400">
+                <span className="block mt-1 bg-clip-text text-transparent text-gradient">
                   engineering skills
                 </span>
               </h1>

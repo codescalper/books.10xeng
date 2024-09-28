@@ -50,6 +50,38 @@
   }
 }
 
+.text-gradient {
+  background: linear-gradient(
+    60deg,
+    #5dade2,
+    #2bdfe5,
+    #00ddff,
+    #066bae,
+    #0088ff,
+    #4444ad,
+    #2813e8b2
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 300% 300%;
+  animation: animationGradient 3s ease alternate infinite;
+}
+
+@keyframes animationGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
+
+
 
 @layer base {
   * {
