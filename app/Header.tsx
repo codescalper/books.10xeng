@@ -38,7 +38,7 @@ export function Header() {
     <header className={`sticky top-0 z-50 w-full ${
       selectedTheme === "light"
         ? "bg-white/80 text-gray-800"
-        : "bg-gray-900/80 text-white"
+        : "bg-gray-900/10 text-white"
     } backdrop-blur-md transition-colors duration-300`}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
