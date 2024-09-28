@@ -1,103 +1,67 @@
 import * as React from "react";
-import { useRouter } from "next/navigation";  
-import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-  CardTitle,  
-} from "@/components/ui/card";
+import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Header } from "@/app/Header";
 import Footer from "@/app/Footer";
 
 
-export default function Sem3(){
+interface ResourceCardProps {
+  title: string;
+  link: string;
+}
 
+
+const ResourceCard: React.FC<ResourceCardProps> = ({ title, link }) => (
+  <Card className="w-[350px]">
+    <CardContent />
+    <CardFooter className="flex justify-center">
+      <a href={link} target="_blank" rel="noopener noreferrer">
+        <Button size="lg">{title}</Button>
+      </a>
+    </CardFooter>
+  </Card>
+);
+
+
+const resources = [
+  {
+    title: "Engineering Mathematics (EM-3)",
+    link: "https://drive.google.com/drive/folders/15Xp9fyur9Alqiq-FrmuclJB9Nmp4Xn8U?usp=sharing",
+  },
+  {
+    title: "Discrete Structures and Graph Theory (DSGT)",
+    link: "",
+  },
+  {
+    title: "Data Structures (DS)",
+    link: "https://drive.google.com/file/d/1faDrFa8BTY0c9snaudYrttjXmM5yDDYn/view?usp=sharing",
+  },
+  {
+    title: "Digital Logic & Computer Architecture",
+    link: "",
+  },
+  {
+    title: "Computer Graphics",
+    link: "https://drive.google.com/drive/folders/15Xp9fyur9Alqiq-FrmuclJB9Nmp4Xn8U?usp=sharing",
+  },
+  {
+    title: "Java OOPS",
+    link: "https://drive.google.com/drive/folders/17mxcsCJqoHWJHbqT2v9k9sL1uwCd2-VN?usp=sharing",
+  },
+];
+
+export default function Sem3() {
   return (
-    <>
-     <div className="flex flex-col min-h-screen">
-            <Header />
-            <div className="flex flex-grow flex-col items-center pt-16">
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-20 lg:gap-40 mx-auto pb-16">
-
-            <Card className="w-[350px]">
-              <CardContent></CardContent>
-              <CardFooter className="flex justify-center">
-                <a href="https://drive.google.com/drive/folders/15Xp9fyur9Alqiq-FrmuclJB9Nmp4Xn8U?usp=sharing" target="_blank" rel="noopener noreferrer">
-                  <Button size={"lg"}>
-                    Engineering Mathematics (EM-3)
-                  </Button>
-                </a>
-              </CardFooter>
-            </Card>
-
-            <Card className="w-[350px]">
-              <CardContent></CardContent>
-              <CardFooter className="flex justify-center">
-              <a href="" target="_blank" rel="noopener noreferrer">
-                  <Button size={"lg"}>
-                    Discrete Structures and Graph Theory (DSGT)
-                  </Button>
-                </a>
-              </CardFooter>
-            </Card>
-
-            <Card className="w-[350px]">
-              <CardContent></CardContent>
-              <CardFooter className="flex justify-center">
-              <a href="https://drive.google.com/file/d/1faDrFa8BTY0c9snaudYrttjXmM5yDDYn/view?usp=sharing" target="_blank" rel="noopener noreferrer">                  
-                  <Button size={"lg"}>
-                    Data Structures (DS)
-                  </Button>
-                </a>
-              </CardFooter>
-            </Card>
-
-            <Card className="w-[350px]">
-              <CardContent></CardContent>
-              <CardFooter className="flex justify-center">
-              <a href="" target="_blank" rel="noopener noreferrer"> 
-                  <Button size={"lg"}>
-                    Digital Logic & Computer Architecture
-                  </Button>
-                </a>
-              </CardFooter>
-            </Card>
-
-            <Card className="w-[350px]">
-              <CardContent></CardContent>
-              <CardFooter className="flex justify-center">
-              <a href="https://drive.google.com/drive/folders/15Xp9fyur9Alqiq-FrmuclJB9Nmp4Xn8U?usp=sharing" target="_blank" rel="noopener noreferrer">
-                  <Button size={"lg"}>
-                    Computer Graphics
-                  </Button>
-                </a>
-              </CardFooter>
-            </Card>
-
-            <Card className="w-[350px]">
-              <CardContent></CardContent>
-              <CardFooter className="flex justify-center">
-              <a href="https://drive.google.com/drive/folders/17mxcsCJqoHWJHbqT2v9k9sL1uwCd2-VN?usp=sharing" target="_blank" rel="noopener noreferrer">
-                  <Button size={"lg"}>
-                   Java OOPS
-                  </Button>
-                </a>
-              </CardFooter>
-            </Card>
-
-          </div>
-
+    <div className="flex flex-col min-h-screen">
+      <Header />
+      <main className="flex flex-grow flex-col items-center pt-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-20 lg:gap-40 mx-auto pb-16">
+          {resources.map((resource, index) => (
+            <ResourceCard key={index} title={resource.title} link={resource.link} />
+          ))}
         </div>
-
-          <Footer />  
-
-
-      </div>
-
-    </>
+      </main>
+      <Footer />
+    </div>
   );
-
 }
