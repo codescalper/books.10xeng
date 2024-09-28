@@ -58,12 +58,10 @@ export function Header() {
                 {item.name}
               </Link>
             ))}
-            <ThemeToggle />
           </nav>
 
           {/* Mobile Navigation */}
           <div className="md:hidden flex items-center">
-            <ThemeToggle />
             <Drawer>
               <DrawerTrigger asChild>
                 <Button variant="ghost" size="icon" className="ml-2">
