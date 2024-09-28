@@ -6,11 +6,11 @@ import { Header } from "@/app/Header";
 import Footer from "@/app/Footer";
 
 const resources = [
-  { title: "Engineering Mathematics (EM-4)", link: "" },
-  { title: "Analysis of Algorithms (AOA)", link: "" },
-  { title: "Database Management System (DBMS)", link: "" },
-  { title: "Operating System (OS)", link: "" },
-  { title: "Microprocessor (MP)", link: "" },
+  { title: "Engineering Mathematics (EM-4)", link: "https://drive.google.com/drive/folders/1v6GHyRA-oTQ3QCEGKievapw5oVewTHpi?usp=drive_link" },
+  { title: "Analysis of Algorithms (AOA)", link: "https://drive.google.com/drive/folders/1VHFYXYqi6lv81mft0aa1rrbRFryIXdDn?usp=drive_link" },
+  { title: "Database Management System (DBMS)", link: "https://drive.google.com/drive/folders/1McIOxDze2GlpH_hM5MC-yqo-zDzKJiI9?usp=drive_link" },
+  { title: "Operating System (OS)", link: "https://drive.google.com/drive/folders/1x_O5SRepGEXxMbVgcleoAL6OMAcpH3UH?usp=drive_link" },
+  { title: "Microprocessor (MP)", link: "https://drive.google.com/drive/folders/1KWgNSywvk0E0Zqy4bmbcUOmx7kCQfSc6?usp=drive_link" }
 ];
 
 const ResourceCard: React.FC<{ title: string; link: string }> = ({ title, link }) => (

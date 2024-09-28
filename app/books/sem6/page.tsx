@@ -8,10 +8,10 @@ import Footer from "@/app/Footer";
 const resources = [
   { title: "System Programming & Compiler Construction (SPCC)", link: "https://drive.google.com/drive/folders/12fMQ6wjJCXvvr-yVou3b2MZsK70_GdLF?usp=sharing" },
   { title: "Cryptography & System Security (CSS)", link: "https://drive.google.com/file/d/1TXh2DZl6lmWoqDYXoh7OHqUtDrYBkcxj/view?usp=sharing" },
-  { title: "Mobile Computing (MC)", link: "" },
-  { title: "Artificial Intelligence (AI)", link: "" },
+  { title: "Mobile Computing (MC)", link: "https://drive.google.com/file/d/1pzujMR21O3cteVkIRa-_6spznx9m2sHj/view?usp=drive_link" },
+  { title: "Artificial Intelligence (AI)", link: "https://drive.google.com/file/d/1ZjMGPVcMpQ9OLqTqgJGvZtFg-Lxmx7YA/view?usp=drive_link" },
   { title: "Internet of Things (IOT)", link: "" },
-  { title: "Quantitative Analysis (QA)", link: "" },
+  { title: "Quantitative Analysis (QA)", link: "https://drive.google.com/file/d/1WlsSqo2UrVRvGiGq-f8Xp68jxNYozyS9/view?usp=drive_link" },
 ];
 
 const ResourceCard: React.FC<{ title: string; link: string }> = ({ title, link }) => (

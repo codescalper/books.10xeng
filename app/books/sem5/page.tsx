@@ -11,7 +11,7 @@ const resources = [
   { title: "Computer Networks (CN)", link: "https://drive.google.com/file/d/1MG3QysmzKBWvarkW5dRg7FaBQEkpILIJ/view?usp=sharing" },
   { title: "Data Warehousing & Mining (DWM)", link: "https://drive.google.com/drive/folders/198il1hTudXtdV5UF9Xw4jnAWd92uTF9u?usp=drive_link" },
   { title: "Internet Programming (IP)", link: "https://drive.google.com/file/d/1yhM8XdAqdQVcmPZ15ohth65Y_pMi0_ry/view?usp=sharing" },
-  { title: "Advance Database Management System (ADBMS)", link: "" },
+  { title: "Advance Database Management System (ADBMS)", link: "https://drive.google.com/drive/folders/1D9aRB8wvboWDMaFi3Ne8zWxNZ-ALDOft?usp=drive_link" },
 ];
 
 const ResourceCard: React.FC<{ title: string; link: string }> = ({ title, link }) => (

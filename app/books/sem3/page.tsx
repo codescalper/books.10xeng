@@ -26,11 +26,11 @@ const ResourceCard: React.FC<ResourceCardProps> = ({ title, link }) => (
 const resources = [
   {
     title: "Engineering Mathematics (EM-3)",
-    link: "https://drive.google.com/drive/folders/15Xp9fyur9Alqiq-FrmuclJB9Nmp4Xn8U?usp=sharing",
+    link: "https://drive.google.com/drive/folders/15S4ImvulYdKCBG6U0bpxUw14fWXpogeO?usp=drive_link",
   },
   {
     title: "Discrete Structures and Graph Theory (DSGT)",
-    link: "",
+    link: "https://drive.google.com/file/d/1ktPCeO8xjEKLua-xj_fWe7ZdsKVvIbxk/view?usp=sharing",
   },
   {
     title: "Data Structures (DS)",
@@ -38,7 +38,7 @@ const resources = [
   },
   {
     title: "Digital Logic & Computer Architecture",
-    link: "",
+    link: "https://drive.google.com/drive/folders/1lfUJfi2dnnppDxTRDGuw5BMeaeHmMXCt?usp=drive_link",
   },
   {
     title: "Computer Graphics",
