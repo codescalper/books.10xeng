@@ -8,7 +8,6 @@ import OpenSource from './OpenSource'
 export default function Home() {
   return (
     <div>
-      <Header />
       <CLientHero />
       <OpenSource />
       <AboutUs />

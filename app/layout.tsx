@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import { ThemeProvider } from "@/components/theme-provider"
 import { Providers } from './providers'
 import { Analytics } from '@vercel/analytics/react';
+import { Header } from './Header'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -18,8 +19,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <>
       <html lang="en" suppressHydrationWarning>
-        <head />
         <body>
+      <Header />
           <ThemeProvider
             attribute="class"
             defaultTheme="system"

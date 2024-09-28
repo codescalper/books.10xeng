@@ -55,7 +55,7 @@ export default function Sem1() {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <Header />
+
       <main className="flex flex-grow flex-col items-center pt-16">
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-20 lg:gap-40 mx-auto pb-16">
           {resources.map((resource, index) => (

@@ -19,7 +19,7 @@ export default function Books() {
     return (
         <>
  <div className="flex flex-col min-h-screen">
-            <Header />
+ 
             <div className="flex flex-grow flex-col items-center pt-16">
                 <div className="grid grid-cols-1 md:grid-cols-1 xl:grid-cols-2 gap-20 lg:gap-40 mx-auto pb-16">
                     <Card className="w-[300px] ">

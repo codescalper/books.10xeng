@@ -92,7 +92,7 @@ const ResourceCard: React.FC<ResourceCardProps> = ({ title, link, links }) => (
 
 const Page: React.FC = () => (
   <div className="flex flex-col min-h-screen">
-    <Header />
+   
     <div className="flex-grow flex flex-col items-center pt-16">
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-20 lg:gap-40 mx-auto pb-16">
         {resources.map((resource, idx) => (
