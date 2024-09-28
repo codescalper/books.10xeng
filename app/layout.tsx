@@ -22,7 +22,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <body>
       <Header />
           <ThemeProvider
-            attribute="class"
+            attribute="class" 
             defaultTheme="system"
             enableSystem
             disableTransitionOnChange
