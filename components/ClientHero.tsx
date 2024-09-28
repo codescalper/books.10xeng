@@ -59,7 +59,7 @@ export default function ClientHero() {
                   engineering skills
                 </span>
               </h1>
-              <p className="max-w-[600px] text-gray-400 md:text-xl dark:text-gray-400 mx-auto mt-4">
+              <p className="max-w-[300px] md:max-w-[600px] text-gray-400 md:text-xl dark:text-gray-400 mx-auto mt-4">
                 Learn from experts and ace your exams with our tips, tricks and study resources.
               </p>
             </div>
