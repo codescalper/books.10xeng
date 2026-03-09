@@ -1,88 +1,145 @@
-        import { FaTwitter, FaInstagram, FaDiscord, FaTelegram, FaYoutube, FaGithub, FaLinkedin } from "react-icons/fa";
+import Link from "next/link";
+import {
+  Github,
+  Twitter,
+  Instagram,
+  Linkedin,
+  Mail,
+  MessagesSquare,
+} from "lucide-react";
 
-        export default function Footer() {
+export default function Footer() {
+  return (
+    <footer className="border-t border-border bg-background pt-16 pb-8 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+          <div className="col-span-1 md:col-span-2 space-y-6">
+            <div className="font-clash text-3xl font-bold text-white tracking-tighter">
+              10xEng<span className="text-primary">.</span>
+            </div>
+            <p className="font-satoshi text-muted-foreground max-w-sm">
+              Built with ❤️ for engineers who want more. A free open-source
+              initiative.
+            </p>
+            <div className="flex gap-4 pt-2">
+              <a
+                href="https://github.com/codescalper/books.10xeng"
+                target="_blank"
+                rel="noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                <Github className="w-5 h-5" />
+              </a>
+              <a
+                href="https://twitter.com/mayanks_tw"
+                target="_blank"
+                rel="noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                <Twitter className="w-5 h-5" />
+              </a>
+              <a
+                href="https://www.instagram.com/mayankonweb/"
+                target="_blank"
+                rel="noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                <Instagram className="w-5 h-5" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/mayankonli/"
+                target="_blank"
+                rel="noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                <Linkedin className="w-5 h-5" />
+              </a>
+            </div>
+          </div>
 
-            const links = [
-                {
-                    title: "About Us",
-                    href: "#about-us",
-                },
-                {
-                    title: "Books",
-                    href: "/books",
-                },
-                {
-                    title: "Blogs",
-                    href: "https://mayankonweb.hashnode.dev/",
-                },
-                {
-                    title: "Developer",
-                    href: "https://www.linkedin.com/in/mayankonli/",
-                },
-                {
-                    title: "Contact Us",
-                    href: "mailto:mayankyt22@gmail.com",
-                },
-            ];
+          <div>
+            <h4 className="font-mono text-sm font-bold text-white uppercase tracking-wider mb-6">
+              Navigation
+            </h4>
+            <ul className="space-y-4 font-satoshi text-muted-foreground">
+              <li>
+                <Link
+                  href="/books"
+                  className="hover:text-primary hover:underline underline-offset-4 transition-all"
+                >
+                  Books
+                </Link>
+              </li>
+              <li>
+                <a
+                  href="https://mayankonweb.hashnode.dev/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-primary hover:underline underline-offset-4 transition-all"
+                >
+                  Blogs
+                </a>
+              </li>
+              <li>
+                <Link
+                  href="#"
+                  className="hover:text-primary hover:underline underline-offset-4 transition-all"
+                >
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#"
+                  className="hover:text-primary hover:underline underline-offset-4 transition-all"
+                >
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </div>
 
+          <div>
+            <h4 className="font-mono text-sm font-bold text-white uppercase tracking-wider mb-6">
+              Contact
+            </h4>
+            <ul className="space-y-4 font-satoshi text-muted-foreground">
+              <li>
+                <a
+                  href="mailto:mayankyt22@gmail.com"
+                  className="hover:text-primary transition-colors flex items-center gap-2"
+                >
+                  <Mail className="w-4 h-4" /> mayankyt22@gmail.com
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="hover:text-primary transition-colors flex items-center gap-2"
+                >
+                  <MessagesSquare className="w-4 h-4" /> Join Discord
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/mayankonli/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-primary transition-colors flex items-center gap-2"
+                >
+                  <Linkedin className="w-4 h-4" /> Mayank (Developer)
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-            return (
-            <>
-                <footer className="relative py-12 border-t-2 border-indigo-600 w-full">
-
-                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 animate-pulse"></div>
-                    <div className="max-w-7xl mx-auto ">
-                        <div className="flex flex-col md:flex-row items-center justify-center">
-
-                            <div className="mt-4 md:mt-0 grid grid-cols-1 md:grid-cols-5 gap-4">
-                                {links.map((link, index) => (
-                                    <a
-                                        key={index}
-                                        className="text-center hover:text-purple-500"
-                                        href={link.href}
-                                    >
-                                        {link.title}
-                                    </a>
-                                ))}
-                            </div>
-
-                        </div>
-                        <div className="flex justify-between flex-col md:flex-row items-center mt-2">
-
-                            <h2 className="text-2xl font-bold mt-5">10xEng</h2>
-                            <div className="flex gap-4 mt-5">
-                                <a href="https://twitter.com/mayanks_tw" className="text-gray-500 hover:text-blue-400">
-                                    <FaTwitter size="1.5em" />
-                                </a>
-                                <a href="https://www.instagram.com/mayankonweb/" className="text-gray-500 hover:text-red-500">
-                                    <FaInstagram size="1.5em" />
-                                </a>
-                                <a href="https://www.linkedin.com/in/mayankonli/" className="text-gray-500 hover:text-blue-500">
-                                    <FaLinkedin size="1.5em" />
-                                </a>
-                                <a href="" className="text-gray-500 hover:text-blue-400">
-                                    <FaTelegram size="1.5em" />
-                                </a>
-                                <a href="" className="text-gray-500 hover:text-blue-800">
-                                    <FaDiscord size="1.5em" />
-                                </a>
-                                <a href="https://www.youtube.com/@mhtcetshalamayanksingh" className="text-gray-500 hover:text-red-600">
-                                    <FaYoutube size="1.5em" />
-                                </a>
-                                <a href="https://github.com/codescalper" className="text-gray-500 hover:text-green-500">
-                                    <FaGithub size="1.5em" />
-                                </a>
-                            </div>
-                        </div>
-
-                        <div className="mt-6 pt-6 border-t-1 border-gray-200 text-center">
-                            <p className="text-sm text-gray-500">
-                                Copyright © {new Date().getFullYear()} 10xEng. All rights reserved.
-                            </p>
-                        </div>
-
-                    </div>
-                </footer>
-                </>
-            );
-        }
+        <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="font-mono text-xs text-muted-foreground">
+            &copy; {new Date().getFullYear()} 10xEng. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+}

@@ -1,83 +1,101 @@
-"use client"
+"use client";
 
-import React from 'react';
+import { useEffect, useRef, useState } from "react";
+import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import Router, { useRouter } from 'next/navigation';
-import { useEffect, useState } from "react";
-import Confetti from "react-dom-confetti";
-
-const GlowingBadge = ({ children }: { children: React.ReactNode }) => (
-  <div className="relative inline-block">
-    <div className="absolute inset-0 rounded-full bg-gradient-to-r shadow-xl from-blue-500 via-purple-500 to-indigo-500 opacity-90 blur-md animate-pulse"></div>
-    {/* <div className="absolute inset-0 rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 animate-border"></div> */}
-    <Badge variant="outline" className="relative z-10 bg-background border-transparent">
-      {children}
-    </Badge>
-  </div>
-);
+import confetti from "canvas-confetti";
 
 export default function ClientHero() {
-  const [isConfettiActive, setIsConfettiActive] = useState(false);
   const router = useRouter();
-  const confettiConfig = {
-    angle: 90,
-    spread: 180,
-    startVelocity: 40,
-    elementCount: 70,
-    dragFriction: 0.12,
-    duration: 3000,
-    stagger: 3,
-    width: "20px",
-    height: "40px",
-    colors: ["#F7D708", "#FF6B6B", "#70A1FF", "#23D5AB", "#E38627"],
-  };
+  const btnRef = useRef<HTMLButtonElement>(null);
 
-  const handleGetStartedClick = () => {
-    setIsConfettiActive(true);
-    setTimeout(() => {
-      setIsConfettiActive(false);
-    }, 100);
+  const handleCTA = () => {
+    confetti({
+      particleCount: 100,
+      spread: 70,
+      origin: { y: 0.6 },
+      colors: ["#a3e635", "#ffffff", "#222222"],
+    });
     setTimeout(() => {
       router.push("/books");
-    }, 600);
+    }, 400);
   };
+  ``;
+  useEffect(() => {
+    const btn = btnRef.current;
+    if (!btn) return;
+
+    const handleMouseMove = (e: MouseEvent) => {
+      const rect = btn.getBoundingClientRect();
+      const x = e.clientX - rect.left - rect.width / 2;
+      const y = e.clientY - rect.top - rect.height / 2;
+      btn.style.transform = `translate(${x * 0.2}px, ${y * 0.2}px) scale(1.05)`;
+    };
+
+    const handleMouseLeave = () => {
+      btn.style.transform = `translate(0px, 0px) scale(1)`;
+    };
+
+    btn.addEventListener("mousemove", handleMouseMove);
+    btn.addEventListener("mouseleave", handleMouseLeave);
+
+    return () => {
+      btn.removeEventListener("mousemove", handleMouseMove);
+      btn.removeEventListener("mouseleave", handleMouseLeave);
+    };
+  }, []);
 
   return (
-    <section className="flex items-center justify-center w-full min-h-screen text-white">
-      <div className="container px-4 md:px-6 py-10">
-        <div className="grid gap-6 items-center">
-          <div className="flex flex-col justify-center space-y-4 text-center">
-            <div className="space-y-2">
-              <div className="flex justify-center space-x-2 mb-4">
-                <GlowingBadge>New books Updated</GlowingBadge>
-              </div>
+    <section className="relative min-h-[90vh] flex flex-col items-center justify-center overflow-hidden px-4 sm:px-6 lg:px-8">
+      <div className="ambient-bg"></div>
 
-              <h1 className="selection:bg-pink-400 text-4xl font-bold tracking-tighter sm:text-5xl xl:text-8xl mb-5">
-                Level up your
-                <span className="block mt-1 bg-clip-text text-transparent text-gradient">
-                  engineering skills
-                </span>
-              </h1>
-              <p className="max-w-[300px] md:max-w-[600px] text-gray-400 md:text-xl dark:text-gray-400 mx-auto mt-4">
-                Learn from experts and ace your exams with our tips, tricks and study resources.
-              </p>
-            </div>
-            <div className="w-full max-w-sm space-y-2 mx-auto">
-              <Button
-                className=" " 
-                onClick={handleGetStartedClick}
+      <div className="text-center max-w-5xl mx-auto z-10 space-y-8">
+        <div className="opacity-0 animate-fade-in-up flex justify-center">
+          <Badge
+            variant="outline"
+            className="font-mono text-primary border-primary/30 bg-primary/5 px-4 py-1.5 text-sm uppercase tracking-wider"
+          >
+            Open Source &middot; Free Forever
+          </Badge>
+        </div>
+
+        <h1 className="opacity-0 animate-fade-in-up delay-200 text-5xl md:text-7xl lg:text-8xl font-clash font-bold text-white tracking-tighter leading-[1.05]">
+          Stop cramming.
+          <br />
+          <span className="text-primary text-glow">Start engineering.</span>
+        </h1>
+
+        <p className="opacity-0 animate-fade-in-up delay-300 mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto font-satoshi font-medium">
+          Free books, notes & resources for every semester.
+          <br />
+          Built by engineers, for engineers.
+        </p>
+
+        <div className="opacity-0 animate-fade-in-up delay-400 mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <Button
+            ref={btnRef}
+            onClick={handleCTA}
+            size="lg"
+            className="transition-all duration-300 ease-out bg-primary text-primary-foreground hover:bg-primary/90 font-mono font-bold text-base h-16 px-8 rounded-none border border-primary relative overflow-hidden group"
+          >
+            <span className="relative z-10 flex items-center gap-2">
+              Explore Free Books
+              <svg
+                className="w-5 h-5 group-hover:translate-x-1 transition-transform"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
               >
-                Get Started
-              </Button>
-              <div className="mt-4 mx-auto flex justify-center">
-                <Confetti active={isConfettiActive} config={confettiConfig} />
-              </div>
-            </div>
-            <div className="flex justify-center mt-6">
-              <GlowingBadge>Updating notes and PYQ soon</GlowingBadge>
-            </div>
-          </div>
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+              </svg>
+            </span>
+          </Button>
         </div>
       </div>
     </section>

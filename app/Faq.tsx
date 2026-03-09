@@ -1,43 +1,82 @@
-"use client"
+"use client";
+
+import { useEffect, useRef } from "react";
 import {
-    Accordion,
-    AccordionContent,
-    AccordionItem,
-    AccordionTrigger,
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
 } from "@/components/ui/accordion";
 
+const faqs = [
+  {
+    q: "Are the books really free? No hidden fees?",
+    a: "Yes, completely free. No login, no paywall, no catch. We believe education should be accessible to everyone.",
+  },
+  {
+    q: "What format are the books in?",
+    a: "All books and study materials are provided in high-quality PDF format, optimized for viewing on laptops, tablets, and phones.",
+  },
+  {
+    q: "Do you have books for branches other than CS?",
+    a: "Currently, first-year materials cover all branches. From 2nd year onwards, our focus is primarily on Computer Science/IT. We plan to expand based on community contributions.",
+  },
+  {
+    q: "Do you provide VIVA preparation materials?",
+    a: "Yes! We have dedicated sections for VIVA preparation, especially for core CS subjects, to help you ace your practical exams.",
+  },
+  {
+    q: "When will notes and PYQs be available?",
+    a: "Very soon. They are currently in the works. Follow us on socials or join our Discord to get notified the moment they drop.",
+  },
+];
+
 export default function Faq() {
-    return (
-        <div className="px-4 md:px-8 lg:px-12 py-8 mt-16 sm:mt-32 xl:mt-64 mb-32">
-            <h1 className="text-4xl md:text-5xl xl:text-8xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-t from-cyan-500 to-purple-400 selection:bg-pink-400 selection:text-white">
-                FAQs
-            </h1>
-            <Accordion type="single" collapsible className="w-full selection:bg-lime-400 selection:text-black">
-                <AccordionItem value="item-1">
-                    <AccordionTrigger className="text-base md:text-xl xl:text-2xl selection:bg-lime-400 selection:text-black">
-                        In which form books are available?
-                    </AccordionTrigger>
-                    <AccordionContent className="text-sm md:text-lg xl:text-xl selection:bg-lime-400 selection:text-black">
-                        Books are available in the form of PDF.
-                    </AccordionContent>
-                </AccordionItem>
-                <AccordionItem value="item-2">
-                    <AccordionTrigger className="text-base md:text-xl xl:text-2xl selection:bg-lime-400 selection:text-black">
-                        Is there a book for Core Branches like Civil, Mechanical, Electronics?
-                    </AccordionTrigger>
-                    <AccordionContent className="text-sm md:text-lg xl:text-xl">
-                        No, but I would be happy to add them if someone provides me the PDF on any of my socials.
-                    </AccordionContent>
-                </AccordionItem>
-                <AccordionItem value="item-3">
-                    <AccordionTrigger className="text-base md:text-xl xl:text-2xl">
-                        Will you provide materials for VIVA?
-                    </AccordionTrigger>
-                    <AccordionContent className="text-sm md:text-lg xl:text-xl">
-                        Yes. The materials for viva would be provided for Computer Engineering students.
-                    </AccordionContent>
-                </AccordionItem>
-            </Accordion>
-        </div>
+  const sectionRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate-fade-in-up");
+          entry.target.classList.remove("opacity-0");
+        }
+      },
+      { threshold: 0.1 },
     );
+
+    if (sectionRef.current) observer.observe(sectionRef.current);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <section
+      ref={sectionRef}
+      className="py-24 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto opacity-0"
+    >
+      <div className="text-center mb-16">
+        <h2 className="text-4xl md:text-5xl font-clash font-bold text-white mb-4">
+          System queries.
+        </h2>
+        <div className="h-1 w-20 bg-primary mx-auto"></div>
+      </div>
+
+      <Accordion type="single" collapsible className="w-full space-y-4">
+        {faqs.map((faq, i) => (
+          <AccordionItem
+            key={i}
+            value={`item-${i}`}
+            className="border border-border bg-card px-6 rounded-none data-[state=open]:border-primary/50 transition-colors"
+          >
+            <AccordionTrigger className="font-clash text-xl md:text-2xl text-left hover:text-primary hover:no-underline py-6">
+              {faq.q}
+            </AccordionTrigger>
+            <AccordionContent className="font-satoshi text-muted-foreground text-base md:text-lg pb-6 leading-relaxed">
+              {faq.a}
+            </AccordionContent>
+          </AccordionItem>
+        ))}
+      </Accordion>
+    </section>
+  );
 }

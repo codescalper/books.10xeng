@@ -1,94 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700&f[]=satoshi@300,400,500,700,900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 224 71.4% 4.1%;
-    --card: 0 0% 100%;
-    --card-foreground: 224 71.4% 4.1%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 224 71.4% 4.1%;
-    --primary: 262.1 83.3% 57.8%;
-    --primary-foreground: 210 20% 98%;
-    --secondary: 220 14.3% 95.9%;
-    --secondary-foreground: 220.9 39.3% 11%;
-    --muted: 220 14.3% 95.9%;
-    --muted-foreground: 220 8.9% 46.1%;
-    --accent: 220 14.3% 95.9%;
-    --accent-foreground: 220.9 39.3% 11%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 20% 98%;
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 262.1 83.3% 57.8%;
+    --background: 240 20% 5%; /* #0a0a0f */
+    --foreground: 0 0% 100%;
+    --card: 240 20% 7%;
+    --card-foreground: 0 0% 100%;
+    --popover: 240 20% 7%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 84 77% 55%; /* #a3e635 Electric Lime */
+    --primary-foreground: 240 20% 5%;
+    --secondary: 240 20% 12%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 240 20% 12%;
+    --muted-foreground: 0 0% 63%; /* #a0a0a0 */
+    --accent: 84 77% 55%;
+    --accent-foreground: 240 20% 5%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 240 20% 15%;
+    --input: 240 20% 15%;
+    --ring: 84 77% 55%;
     --radius: 0.5rem;
   }
-
-  .dark {
-    --background: 224 71.4% 4.1%;
-    --foreground: 210 20% 98%;
-    --card: 224 71.4% 4.1%;
-    --card-foreground: 210 20% 98%;
-    --popover: 224 71.4% 4.1%;
-    --popover-foreground: 210 20% 98%;
-    --primary: 263.4 70% 50.4%;
-    --primary-foreground: 210 20% 98%;
-    --secondary: 215 27.9% 16.9%;
-    --secondary-foreground: 210 20% 98%;
-    --muted: 215 27.9% 16.9%;
-    --muted-foreground: 217.9 10.6% 64.9%;
-    --accent: 215 27.9% 16.9%;
-    --accent-foreground: 210 20% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 20% 98%;
-    --border: 215 27.9% 16.9%;
-    --input: 215 27.9% 16.9%;
-    --ring: 263.4 70% 50.4%;
-  }
 }
-
-.text-gradient {
-  background: linear-gradient(
-    60deg,
-    #5dade2,
-    #2bdfe5,
-    #00ddff,
-    #066bae,
-    #0088ff,
-    #4444ad,
-    #2813e8b2
-  );
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-size: 300% 300%;
-  animation: animationGradient 3s ease alternate infinite;
-}
-
-@keyframes animationGradient {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 50% 100%;
-  }
-  100% {
-    background-position: 100% 0%;
-  }
-}
-
-
-
 
 @layer base {
   * {
     @apply border-border;
   }
-
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-satoshi antialiased;
+    background-color: #0a0a0f;
+    color: #a0a0a0;
   }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-clash text-white tracking-tight;
+  }
+  .font-clash {
+    font-family: 'Clash Display', sans-serif;
+  }
+  .font-satoshi {
+    font-family: 'Satoshi', sans-serif;
+  }
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+  
+  ::selection {
+    @apply bg-primary text-primary-foreground;
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 20px rgba(163, 230, 53, 0.3);
+  }
+  .bg-glow {
+    box-shadow: 0 0 40px rgba(163, 230, 53, 0.15);
+  }
+}
+
+/* Animations */
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+
+/* Subtle Ambient Background */
+.ambient-bg {
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  z-index: -1;
+  background: 
+    radial-gradient(circle at 15% 50%, rgba(163, 230, 53, 0.03), transparent 25%),
+    radial-gradient(circle at 85% 30%, rgba(163, 230, 53, 0.04), transparent 25%);
+  pointer-events: none;
 }
